@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Manager</title>
+    <link rel="stylesheet" href="contacts.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <div class="logo">
+                <span class="logo-icon">📇</span>
+                <div class="logo-text">
+                    <span class="logo-title">Contact Manager</span>
+                    <span class="logo-subtitle">Manage your contacts effortlessly</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="page-header">
+                <h1>Contact Manager</h1>
+                <p>Add, edit, and manage your contact information. All data is stored locally in your browser.</p>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="form-card">
+                <h2>Add New Contact</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="contact-name">Name</label>
+                        <input id="contact-name" type="text" required placeholder="Enter full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">Email</label>
+                        <input id="contact-email" type="email" required placeholder="Enter email address">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-phone">Phone Number</label>
+                        <input id="contact-phone" type="tel" required placeholder="Enter phone number">
+                    </div>
+                    <button type="submit" class="btn-primary" id="add-contact-btn">
+                        <span>➕</span> Add Contact
+                    </button>
+                    <p id="contact-message" class="form-message" aria-live="polite"></p>
+                </form>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-section">
+                <div class="search-wrapper">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="contact-search" placeholder="Search contacts by name or email...">
+                </div>
+            </div>
+
+            <!-- Contacts List -->
+            <div class="contacts-card">
+                <div class="card-header">
+                    <h2>Your Contacts</h2>
+                    <span class="contact-count" id="contact-count">0 contacts</span>
+                </div>
+                <div id="contacts-list" class="contacts-list">
+                    <div class="empty-state">
+                        <span class="empty-icon">📋</span>
+                        <p>No contacts added yet.</p>
+                        <p class="empty-hint">Add your first contact above!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <p>Contact Manager &copy; 2026</p>
+            <p class="footer-note">Your data is stored locally in your browser</p>
+        </div>
+    </footer>
+
+    <script src="contacts.js"></script>
+</body>
+</html>
