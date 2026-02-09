@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Filter - JavaScript Exercise</title>
+    <link rel="stylesheet" href="products.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🛍️ Product Filter</h1>
+            <p>Filter products by minimum price</p>
+        </header>
+
+        <div class="controls">
+            <div class="input-group">
+                <label for="min-price">Minimum Price:</label>
+                <input type="number" id="min-price" placeholder="Enter minimum price" min="0" step="0.01">
+                <button id="filter-btn" class="btn-filter">Filter Products</button>
+                <button id="reset-btn" class="btn-reset">Show All</button>
+            </div>
+        </div>
+
+        <div class="results">
+            <h2 id="results-title">All Products</h2>
+            <div id="products-display"></div>
+        </div>
+
+        <div class="console-info">
+            <p>💡 Check the browser console (F12) to see detailed product information</p>
+        </div>
+    </div>
+
+    <script src="products.js"></script>
+</body>
+</html>
